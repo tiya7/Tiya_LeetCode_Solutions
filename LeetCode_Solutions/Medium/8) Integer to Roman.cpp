@@ -1,29 +1,18 @@
 class Solution {
-    public:
-        int romanToInt(string s) {
-                int ans = 0;
-
-                        for (int i = 0; i < s.size(); i++) {
-                                    int val = getValue(s[i]);
-
-                                                if (i < s.size() - 1 && val < getValue(s[i + 1])) {
-                                                                ans -= val;
-                                                                            } else {
-                                                                                            ans += val;
-                                                                                                        }
-                                                                                                                }
-
-                                                                                                                        return ans;
-                                                                                                                            }
-
-                                                                                                                                int getValue(char c) {
-                                                                                                                                        if (c == 'I') return 1;
-                                                                                                                                                if (c == 'V') return 5;
-                                                                                                                                                        if (c == 'X') return 10;
-                                                                                                                                                                if (c == 'L') return 50;
-                                                                                                                                                                        if (c == 'C') return 100;
-                                                                                                                                                                                if (c == 'D') return 500;
-                                                                                                                                                                                        return 1000;
-                                                                                                                                                                                            }
-                                                                                                                                                                                            };7
-}
+public:
+    string intToRoman(int num) {
+        vector<int> values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        vector<string> symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        
+        string result = "";
+        
+        for (int i = 0; i < values.size(); i++) {
+            while (num >= values[i]) {
+                result += symbols[i];
+                num -= values[i];
+            }
+        }
+        
+        return result;
+    }
+};
