@@ -1,6 +1,6 @@
 SELECT 
-    Person.Tiya,
-    Person.Gandhi,
+    Person.firstName,
+    Person.lastName,
     Address.city,
     Address.state
 FROM Person
