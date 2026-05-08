@@ -1,39 +1,32 @@
 class Solution {
 public:
-    void solve(vector<int>& nums, vector<int>& temp,
-               vector<vector<int>>& ans, vector<int>& used) {
-
-        if (temp.size() == nums.size()) {
-            ans.push_back(temp);
+    void solve(int index, vector<int>& nums, vector<vector<int>>& ans) {
+        if (index == nums.size()) {
+            ans.push_back(nums);
             return;
         }
 
-        for (int i = 0; i < nums.size(); i++) {
+        unordered_set<int> s;
 
-            if (used[i]) continue;
-
-            if (i > 0 && nums[i] == nums[i - 1] && !used[i - 1]) {
+        for (int i = index; i < nums.size(); i++) {
+            if (s.find(nums[i]) != s.end()) {
                 continue;
             }
 
-            used[i] = 1;
-            temp.push_back(nums[i]);
+            s.insert(nums[i]);
 
-            solve(nums, temp, ans, used);
+            swap(nums[index], nums[i]);
 
-            temp.pop_back();
-            used[i] = 0;
+            solve(index + 1, nums, ans);
+
+            swap(nums[index], nums[i]);
         }
     }
 
     vector<vector<int>> permuteUnique(vector<int>& nums) {
         vector<vector<int>> ans;
-        vector<int> temp;
-        vector<int> used(nums.size(), 0);
 
-        sort(nums.begin(), nums.end());
-
-        solve(nums, temp, ans, used);
+        solve(0, nums, ans);
 
         return ans;
     }
