@@ -3,24 +3,15 @@ public:
     bool isPalindrome(string s) {
         string str = "";
 
-        for (char c : s) {
-            if (isalnum(c)) {
-                str += tolower(c);
+        for (int i = 0; i < s.length(); i++) {
+            if (isalnum(s[i])) {
+                str += tolower(s[i]);
             }
         }
 
-        int left = 0;
-        int right = str.size() - 1;
+        string rev = str;
+        reverse(rev.begin(), rev.end());
 
-        while (left < right) {
-            if (str[left] != str[right]) {
-                return false;
-            }
-
-            left++;
-            right--;
-        }
-
-        return true;
+        return str == rev;
     }
 };
