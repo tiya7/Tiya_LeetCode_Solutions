@@ -1,12 +1,18 @@
 class Solution {
 public:
-    int singleNumber(vector<int>& nums) {
-        int ans = 0;
+    bool hasCycle(ListNode *head) {
+        ListNode* slow = head;
+        ListNode* fast = head;
 
-        for (int num : nums) {
-            ans ^= num;
+        while (fast != NULL && fast->next != NULL) {
+            slow = slow->next;
+            fast = fast->next->next;
+
+            if (slow == fast) {
+                return true;
+            }
         }
 
-        return ans;
+        return false;
     }
 };
