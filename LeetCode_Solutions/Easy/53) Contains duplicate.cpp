@@ -1,1 +1,6 @@
-Remove duplicates that are contained in the file.
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums) {
+        
+    }
+};
