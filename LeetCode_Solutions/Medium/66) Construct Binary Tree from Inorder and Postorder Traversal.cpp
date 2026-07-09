@@ -1,24 +1,42 @@
 class Solution {
 public:
-    unordered_map<int, int> mp;
-    int idx;
+    vector<vector<int>> levelOrderBottom(TreeNode* root) {
+        vector<vector<int>> ans;
 
-    TreeNode* solve(vector<int>& inorder, vector<int>& postorder, int l, int r) {
-        if (l > r) return nullptr;
+        if (root == NULL)
+            return ans;
 
-        TreeNode* root = new TreeNode(postorder[idx--]);
-        int mid = mp[root->val];
+        queue<TreeNode*> q;
+        q.push(root);
 
-        root->right = solve(inorder, postorder, mid + 1, r);
-        root->left = solve(inorder, postorder, l, mid - 1);
+        while (!q.empty()) {
 
-        return root;
-    }
+            vector<int> level;
+            int size = q.size();
 
-    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-        for (int i = 0; i < inorder.size(); i++)
-            mp[inorder[i]] = i;
-        idx = postorder.size() - 1;
-        return solve(inorder, postorder, 0, inorder.size() - 1);
+            for (int i = 0; i < size; i++) {
+
+                TreeNode* temp = q.front();
+                q.pop();
+
+                level.push_back(temp->val);
+
+                if (temp->left != NULL)
+                    q.push(temp->left);
+
+                if (temp->right != NULL)
+                    q.push(temp->right);
+            }
+
+            ans.push_back(level);
+        }
+
+        vector<vector<int>> result;
+
+        for (int i = ans.size() - 1; i >= 0; i--) {
+            result.push_back(ans[i]);
+        }
+
+        return result;
     }
 };
