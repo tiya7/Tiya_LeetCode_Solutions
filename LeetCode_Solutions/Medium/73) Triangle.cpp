@@ -1,6 +1,1 @@
-class Solution {
-public:
-    int minimumTotal(vector<vector<int>>& triangle) {
-        
-    }
-};
+Given a triangle array, return the minimum path sum from top to bottom.
