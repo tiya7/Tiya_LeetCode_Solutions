@@ -1,41 +1,39 @@
 class Solution {
 public:
-    void dfs(vector<vector<char>>& board, int i, int j) {
-        int m = board.size(), n = board[0].size();
-
-        if (i < 0 || i >= m || j < 0 || j >= n || board[i][j] != 'O')
-            return;
-
-        board[i][j] = '#';
-
-        dfs(board, i + 1, j);
-        dfs(board, i - 1, j);
-        dfs(board, i, j + 1);
-        dfs(board, i, j - 1);
-    }
-
     void solve(vector<vector<char>>& board) {
         if (board.empty()) return;
 
         int m = board.size(), n = board[0].size();
+        queue<pair<int,int>> q;
 
-        for (int i = 0; i < m; i++) {
-            dfs(board, i, 0);
-            dfs(board, i, n - 1);
-        }
-
-        for (int j = 0; j < n; j++) {
-            dfs(board, 0, j);
-            dfs(board, m - 1, j);
-        }
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < n; j++) {
-                if (board[i][j] == 'O')
-                    board[i][j] = 'X';
-                else if (board[i][j] == '#')
-                    board[i][j] = 'O';
+        auto add = [&](int i, int j) {
+            if (i >= 0 && i < m && j >= 0 && j < n && board[i][j] == 'O') {
+                board[i][j] = '#';
+                q.push({i, j});
             }
+        };
+
+        for (int i = 0; i < m; i++) {
+            add(i, 0);
+            add(i, n - 1);
         }
+        for (int j = 0; j < n; j++) {
+            add(0, j);
+            add(m - 1, j);
+        }
+
+        int dx[] = {1, -1, 0, 0};
+        int dy[] = {0, 0, 1, -1};
+
+        while (!q.empty()) {
+            auto [x, y] = q.front();
+            q.pop();
+            for (int k = 0; k < 4; k++)
+                add(x + dx[k], y + dy[k]);
+        }
+
+        for (int i = 0; i < m; i++)
+            for (int j = 0; j < n; j++)
+                board[i][j] = (board[i][j] == '#') ? 'O' : 'X';
     }
 };
