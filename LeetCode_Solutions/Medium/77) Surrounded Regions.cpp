@@ -3,7 +3,7 @@ public:
     void dfs(vector<vector<char>>& board, int i, int j) {
         int m = board.size(), n = board[0].size();
 
-        if (i < 0 || j < 0 || i >= m || j >= n || board[i][j] != 'O')
+        if (i < 0 || i >= m || j < 0 || j >= n || board[i][j] != 'O')
             return;
 
         board[i][j] = '#';
@@ -15,6 +15,8 @@ public:
     }
 
     void solve(vector<vector<char>>& board) {
+        if (board.empty()) return;
+
         int m = board.size(), n = board[0].size();
 
         for (int i = 0; i < m; i++) {
