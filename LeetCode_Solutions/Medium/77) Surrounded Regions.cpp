@@ -1,11 +1,5 @@
 class Solution {
 public:
-    void solve(vector<vector<char>>& board) {
-        
-    }
-};
-class Solution {
-public:
     void dfs(vector<vector<char>>& board, int i, int j) {
         int m = board.size(), n = board[0].size();
 
