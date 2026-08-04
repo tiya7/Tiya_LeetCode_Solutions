@@ -1,33 +1,6 @@
 
 
-Avatar
-TiyaGandhi
-Access all features with our Premium subscription!
-myLists
-My Lists
-notebook
-Notebook
-progress
-Progress
-points
-Points
-Problems
-Discuss
-Contest
-Interview
-Store
-Try New Features
-Orders
-My Playgrounds
-Settings
-Appearance
-Sign Out
-268. Missing Number
-Easy
-Topics
-premium lock icon
-Companies
-Given an array nums containing n distinct numbers in the range [0, n], return the only number in the range that is missing from the array.
+
 
  
 
@@ -61,64 +34,5 @@ Explanation:
 
 n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the missing number in the range since it does not appear in nums.
 
- 
- 
-
- 
-
- 
-
-Constraints:
-
-n == nums.length
-1 <= n <= 104
-0 <= nums[i] <= n
-All the numbers of nums are unique.
- 
-
-Follow up: Could you implement a solution using only O(1) extra space complexity and O(n) runtime complexity?
-
- 
-Accepted
-4,087,547/5.6M
-Acceptance Rate
-72.4%
-C++
-
-
-
-
-1
-2
-3
-4
-5
-6
-⌄
-⌄
-class Solution {
-public:
-    int missingNumber(vector<int>& nums) {
-        
-    }
-};
-Saved
-Testcase
-1
-2
-3
-[3,0,1]
-[0,1]
-[9,6,4,2,3,5,7,0,1]
-3/8 testcases
-Line 1
-Case 1: nums
-Copyright © 2026 LeetCode. All rights reserved.
-
-14.5K
-
-
-428
-Search questions
 
 
