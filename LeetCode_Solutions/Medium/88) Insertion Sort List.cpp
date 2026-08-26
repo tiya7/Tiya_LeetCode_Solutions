@@ -20,3 +20,9 @@ public:
         return dummy.next;
     }
 };
+class Solution {
+public:
+    ListNode* insertionSortList(ListNode* head) {
+        
+    }
+};
