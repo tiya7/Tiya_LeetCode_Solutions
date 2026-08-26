@@ -1,12 +1,6 @@
 class Solution {
 public:
     int thirdMax(vector<int>& nums) {
-        
-    }
-};
-class Solution {
-public:
-    int thirdMax(vector<int>& nums) {
         sort(nums.begin(), nums.end());
 
         int count = 1;
@@ -24,4 +18,3 @@ public:
 
         return nums[nums.size() - 1];
     }
-};
