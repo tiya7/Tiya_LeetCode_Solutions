@@ -68,3 +68,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 
 
 53
+class Solution {
+public:
+    int countSegments(string s) {
+        
+    }
+};
