@@ -117,3 +117,10 @@ public:
 123456
 Saved
 You must run your code first
+class Solution {
+public:
+    string addStrings(string num1, string num2) {
+        
+    }
+};
+
