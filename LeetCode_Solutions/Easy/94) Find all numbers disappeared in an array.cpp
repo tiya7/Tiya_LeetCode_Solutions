@@ -92,3 +92,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 Search questions
 
 
+class Solution {
+public:
+    vector<int> findDisappearedNumbers(vector<int>& nums) {
+        
+    }
+};
