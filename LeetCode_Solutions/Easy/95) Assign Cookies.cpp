@@ -103,4 +103,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 369
 Search questions
 
-
+class Solution {
+public:
+    int findContentChildren(vector<int>& g, vector<int>& s) {
+        
+    }
+};
