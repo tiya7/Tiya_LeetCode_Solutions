@@ -14,6 +14,7 @@ public:
                 string part = s.substr(0, len);
                 string formed = "";
 
+
                 for (int i = 0; i < n / len; i++)
                     formed += part;
 
