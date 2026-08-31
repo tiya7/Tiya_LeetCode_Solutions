@@ -1,52 +1,24 @@
 class Solution {
 public:
     ListNode* sortList(ListNode* head) {
-        
-    }
-};
-class Solution {
-public:
-    ListNode* merge(ListNode* a, ListNode* b) {
-        ListNode dummy;
-        ListNode* temp = &dummy;
+        vector<int> nums;
+        ListNode* temp = head;
 
-        while (a && b) {
-            if (a->val < b->val) {
-                temp->next = a;
-                a = a->next;
-            } else {
-                temp->next = b;
-                b = b->next;
-            }
+        while (temp != nullptr) {
+            nums.push_back(temp->val);
             temp = temp->next;
         }
 
-        if (a)
-            temp->next = a;
-        else
-            temp->next = b;
+        sort(nums.begin(), nums.end());
 
-        return dummy.next;
-    }
+        temp = head;
+        int i = 0;
 
-    ListNode* sortList(ListNode* head) {
-        if (!head || !head->next)
-            return head;
-
-        ListNode* slow = head;
-        ListNode* fast = head->next;
-
-        while (fast && fast->next) {
-            slow = slow->next;
-            fast = fast->next->next;
+        while (temp != nullptr) {
+            temp->val = nums[i++];
+            temp = temp->next;
         }
 
-        ListNode* second = slow->next;
-        slow->next = nullptr;
-
-        ListNode* left = sortList(head);
-        ListNode* right = sortList(second);
-
-        return merge(left, right);
+        return head;
     }
 };
