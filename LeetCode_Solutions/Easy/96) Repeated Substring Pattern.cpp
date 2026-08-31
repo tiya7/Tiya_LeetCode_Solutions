@@ -93,5 +93,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 
 159
 Search questions
-
-
+class Solution {
+public:
+    bool repeatedSubstringPattern(string s) {
+        
+    }
+};
