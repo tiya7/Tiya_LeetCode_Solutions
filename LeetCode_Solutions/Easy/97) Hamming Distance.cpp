@@ -100,4 +100,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 64
 Search questions
 
-
+class Solution {
+public:
+    int hammingDistance(int x, int y) {
+        
+    }
+};
