@@ -1,12 +1,6 @@
 class Solution {
 public:
     int evalRPN(vector<string>& tokens) {
-        
-    }
-};
-class Solution {
-public:
-    int evalRPN(vector<string>& tokens) {
         stack<int> st;
 
         for (string s : tokens) {
