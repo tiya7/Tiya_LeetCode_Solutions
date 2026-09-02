@@ -117,7 +117,12 @@ Copyright © 2026 LeetCode. All rights reserved.
 
 
 472
-
+class Solution {
+public:
+    int evalRPN(vector<string>& tokens) {
+        
+    }
+};
 105 Online
 Search questions
 
