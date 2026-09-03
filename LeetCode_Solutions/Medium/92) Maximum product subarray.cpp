@@ -1,12 +1,6 @@
 class Solution {
 public:
     int maxProduct(vector<int>& nums) {
-        
-    }
-};
-class Solution {
-public:
-    int maxProduct(vector<int>& nums) {
         int maximum = nums[0];
         int minimum = nums[0];
         int answer = nums[0];
