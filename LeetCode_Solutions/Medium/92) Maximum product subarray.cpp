@@ -93,4 +93,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 474
 Search questions
 
-
+class Solution {
+public:
+    int maxProduct(vector<int>& nums) {
+        
+    }
+};
