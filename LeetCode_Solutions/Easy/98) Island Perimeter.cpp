@@ -1,12 +1,6 @@
 class Solution {
 public:
     int islandPerimeter(vector<vector<int>>& grid) {
-        
-    }
-};
-class Solution {
-public:
-    int islandPerimeter(vector<vector<int>>& grid) {
         int perimeter = 0;
 
         for (int i = 0; i < grid.size(); i++) {
