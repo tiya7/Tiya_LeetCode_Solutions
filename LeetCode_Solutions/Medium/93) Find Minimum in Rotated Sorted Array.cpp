@@ -107,3 +107,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 Search questions
 
 
+class Solution {
+public:
+    int findMin(vector<int>& nums) {
+        
+    }
+};
