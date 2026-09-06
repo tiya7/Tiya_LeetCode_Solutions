@@ -1,12 +1,6 @@
 class Solution {
 public:
     string licenseKeyFormatting(string s, int k) {
-        
-    }
-};
-class Solution {
-public:
-    string licenseKeyFormatting(string s, int k) {
         string temp = "";
 
         for (char c : s) {
