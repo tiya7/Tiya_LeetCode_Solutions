@@ -118,5 +118,26 @@ Copyright © 2026 LeetCode. All rights reserved.
 232 Online
 You must run your code first
 Search questions
-
+class MinStack {
+public:
+    MinStack() {
+        
+    }
+    
+    void push(int value) {
+        
+    }
+    
+    void pop() {
+        
+    }
+    
+    int top() {
+        
+    }
+    
+    int getMin() {
+        
+    }
+};
 
