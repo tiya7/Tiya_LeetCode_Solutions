@@ -91,3 +91,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 Search questions
 
 
+class Solution {
+public:
+    int maximumGap(vector<int>& nums) {
+        
+;    }
+}
