@@ -88,3 +88,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 Search questions
 
 
+class Solution {
+public:
+    int findMaxConsecutiveOnes(vector<int>& nums) {
+        
+    }
+};
