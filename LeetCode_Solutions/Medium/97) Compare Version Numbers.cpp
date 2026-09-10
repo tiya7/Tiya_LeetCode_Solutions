@@ -1,12 +1,6 @@
 class Solution {
 public:
     int compareVersion(string version1, string version2) {
-        
-    }
-};
-class Solution {
-public:
-    int compareVersion(string version1, string version2) {
         stringstream a(version1);
         stringstream b(version2);
 
