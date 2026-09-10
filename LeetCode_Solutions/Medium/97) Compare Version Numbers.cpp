@@ -126,3 +126,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 Search questions
 
 
+class Solution {
+public:
+    int compareVersion(string version1, string version2) {
+        
+    }
+};
