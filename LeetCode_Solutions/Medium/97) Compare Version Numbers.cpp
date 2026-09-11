@@ -1,14 +1,20 @@
 class Solution {
 public:
     int compareVersion(string version1, string version2) {
-        stringstream a(version1);
-        stringstream b(version2);
+        int i = 0, j = 0;
 
-        string x, y;
+        while (i < version1.size() || j < version2.size()) {
+            int n1 = 0, n2 = 0;
 
-        while (getline(a, x, '.') || getline(b, y, '.')) {
-            int n1 = x.empty() ? 0 : stoi(x);
-            int n2 = y.empty() ? 0 : stoi(y);
+            while (i < version1.size() && version1[i] != '.') {
+                n1 = n1 * 10 + (version1[i] - '0');
+                i++;
+            }
+
+            while (j < version2.size() && version2[j] != '.') {
+                n2 = n2 * 10 + (version2[j] - '0');
+                j++;
+            }
 
             if (n1 < n2)
                 return -1;
@@ -16,8 +22,8 @@ public:
             if (n1 > n2)
                 return 1;
 
-            x = "";
-            y = "";
+            i++;
+            j++;
         }
 
         return 0;
