@@ -111,3 +111,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 Search questions
 
 
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+        
+    }
+};
