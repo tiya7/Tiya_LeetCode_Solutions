@@ -79,4 +79,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 131
 Search questions
 
-
+class Solution {
+public:
+    int trailingZeroes(int n) {
+        
+    }
+};
