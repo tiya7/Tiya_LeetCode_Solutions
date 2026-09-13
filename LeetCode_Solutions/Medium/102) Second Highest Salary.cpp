@@ -113,3 +113,6 @@ Copyright © 2026 LeetCode. All rights reserved.
 Search questions
 
 
+SELECT MAX(salary) AS SecondHighestSalary
+FROM Employee
+WHERE salary < (SELECT MAX(salary) FROM Employee);
