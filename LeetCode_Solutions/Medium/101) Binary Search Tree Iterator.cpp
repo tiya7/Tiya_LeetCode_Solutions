@@ -137,8 +137,20 @@ public:
     
     int next() {
         
+class BSTIterator {
+public:
+    BSTIterator(TreeNode* root) {
+        
     }
     
+    int next() {
+        
+    }
+    
+    bool hasNext() {
+        
+    }
+};
     bool hasNext() {
         
     }
