@@ -4,6 +4,6 @@ BEGIN
         SELECT DISTINCT salary
         FROM Employee
         ORDER BY salary DESC
-        LIMIT 1 OFFSET N - 1
+        LIMIT N-1, 1
     );
 END
