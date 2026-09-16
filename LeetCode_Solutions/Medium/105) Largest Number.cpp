@@ -87,3 +87,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 
 231
 Search questions
+class Solution {
+public:
+    string largestNumber(vector<int>& nums) {
+        
+    }
+};
