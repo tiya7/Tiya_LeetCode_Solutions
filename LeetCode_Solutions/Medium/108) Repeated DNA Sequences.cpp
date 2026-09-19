@@ -1,12 +1,6 @@
 class Solution {
 public:
     vector<string> findRepeatedDnaSequences(string s) {
-        
-    }
-};
-class Solution {
-public:
-    vector<string> findRepeatedDnaSequences(string s) {
         map<string, int> mp;
         vector<string> ans;
 
