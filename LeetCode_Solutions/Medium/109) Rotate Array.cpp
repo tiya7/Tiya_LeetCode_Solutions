@@ -103,3 +103,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 
 751
 Search questions
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k) {
+        
+    }
+};
