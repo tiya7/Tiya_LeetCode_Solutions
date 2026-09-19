@@ -90,3 +90,9 @@ Copyright © 2026 LeetCode. All rights reserved.
 
 112
 Search questions
+class Solution {
+public:
+    vector<string> findRepeatedDnaSequences(string s) {
+        
+    }
+};
