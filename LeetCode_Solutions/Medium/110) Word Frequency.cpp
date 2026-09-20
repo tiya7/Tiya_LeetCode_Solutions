@@ -79,3 +79,4 @@ Search questions
 
 Frequency
 The frequency of a word x is the number of times it occurs in the text file.
+tr -s ' ' '\n' < words.txt | sort | uniq -c | sort -nr | awk '{print $2, $1}'
