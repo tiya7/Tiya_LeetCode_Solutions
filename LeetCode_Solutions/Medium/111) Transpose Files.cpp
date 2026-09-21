@@ -67,3 +67,12 @@ Copyright © 2026 LeetCode. All rights reserved.
 
 21
 Search questions
+awk '
+{
+    for (i = 1; i <= NF; i++)
+        a[i] = a[i] (a[i] ? " " : "") $i
+}
+END {
+    for (i = 1; i <= NF; i++)
+        print a[i]
+}' file.txt
