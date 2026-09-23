@@ -1,11 +1,6 @@
 class Solution {
 public:
     vector<int> rightSideView(TreeNode* root) {
-        
-    }
-};class Solution {
-public:
-    vector<int> rightSideView(TreeNode* root) {
         vector<int> ans;
 
         if (root == NULL)
