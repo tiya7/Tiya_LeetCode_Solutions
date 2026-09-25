@@ -1,11 +1,6 @@
 class Solution {
 public:
     int countPrimes(int n) {
-        
-    }
-};class Solution {
-public:
-    int countPrimes(int n) {
         vector<bool> prime(n, true);
 
         if (n <= 2)
