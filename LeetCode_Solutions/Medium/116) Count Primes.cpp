@@ -1,4 +1,9 @@
-
+class Solution {
+public:
+    int countPrimes(int n) {
+        
+    }
+};
 
 Avatar
 TiyaGandhi
