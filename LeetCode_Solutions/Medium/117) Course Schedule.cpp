@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
