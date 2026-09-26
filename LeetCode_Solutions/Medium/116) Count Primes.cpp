@@ -1,26 +1,22 @@
 class Solution {
 public:
     int countPrimes(int n) {
-        vector<bool> prime(n, true);
-
         if (n <= 2)
             return 0;
 
-        prime[0] = prime[1] = false;
+        vector<bool> prime(n, true);
 
-        for (int i = 2; i * i < n; i++) {
+        int count = n / 2;
+
+        for (int i = 3; i * i < n; i += 2) {
             if (prime[i]) {
-                for (int j = i * i; j < n; j += i) {
-                    prime[j] = false;
+                for (int j = i * i; j < n; j += 2 * i) {
+                    if (prime[j]) {
+                        prime[j] = false;
+                        count--;
+                    }
                 }
             }
-        }
-
-        int count = 0;
-
-        for (int i = 2; i < n; i++) {
-            if (prime[i])
-                count++;
         }
 
         return count;
