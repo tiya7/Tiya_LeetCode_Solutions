@@ -1,12 +1,6 @@
 class Solution {
 public:
     bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-        
-    }
-};
-class Solution {
-public:
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
         vector<vector<int>> graph(numCourses);
         vector<int> indegree(numCourses, 0);
 
