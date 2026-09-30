@@ -1,5 +1,18 @@
 
-
+class WordDictionary {
+public:
+    WordDictionary() {
+        
+    }
+    
+    void addWord(string word) {
+        
+    }
+    
+    bool search(string word) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
