@@ -1,18 +1,3 @@
-
-class WordDictionary {
-public:
-    WordDictionary() {
-        
-    }
-    
-    void addWord(string word) {
-        
-    }
-    
-    bool search(string word) {
-        
-    }
-};
 class WordDictionary {
 public:
     struct Node {
