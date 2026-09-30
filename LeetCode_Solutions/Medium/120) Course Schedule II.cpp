@@ -1,11 +1,6 @@
 class Solution {
 public:
     vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
-        
-   
-class Solution {
-public:
-    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {
         vector<vector<int>> graph(numCourses);
         vector<int> indegree(numCourses, 0);
 
