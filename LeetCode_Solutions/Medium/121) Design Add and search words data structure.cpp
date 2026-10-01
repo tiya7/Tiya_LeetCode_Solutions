@@ -2,12 +2,12 @@ class WordDictionary {
 public:
     struct Node {
         Node* child[26];
-        bool isEnd;
+        bool end;
 
         Node() {
-            isEnd = false;
+            end = false;
             for (int i = 0; i < 26; i++)
-                child[i] = nullptr;
+                child[i] = NULL;
         }
     };
 
@@ -21,43 +21,39 @@ public:
         Node* curr = root;
 
         for (char c : word) {
-            int index = c - 'a';
+            int x = c - 'a';
 
-            if (curr->child[index] == nullptr)
-                curr->child[index] = new Node();
+            if (curr->child[x] == NULL)
+                curr->child[x] = new Node();
 
-            curr = curr->child[index];
+            curr = curr->child[x];
         }
 
-        curr->isEnd = true;
+        curr->end = true;
     }
 
-    bool searchHelper(Node* curr, string& word, int index) {
+    bool searchWord(Node* curr, string& word, int index) {
         if (index == word.size())
-            return curr->isEnd;
+            return curr->end;
 
-        char c = word[index];
-
-        if (c != '.') {
-            int pos = c - 'a';
-
-            if (curr->child[pos] == nullptr)
-                return false;
-
-            return searchHelper(curr->child[pos], word, index + 1);
-        }
-
-        for (int i = 0; i < 26; i++) {
-            if (curr->child[i] != nullptr) {
-                if (searchHelper(curr->child[i], word, index + 1))
+        if (word[index] == '.') {
+            for (int i = 0; i < 26; i++) {
+                if (curr->child[i] != NULL &&
+                    searchWord(curr->child[i], word, index + 1))
                     return true;
             }
+            return false;
         }
 
-        return false;
+        int x = word[index] - 'a';
+
+        if (curr->child[x] == NULL)
+            return false;
+
+        return searchWord(curr->child[x], word, index + 1);
     }
 
     bool search(string word) {
-        return searchHelper(root, word, 0);
+        return searchWord(root, word, 0);
     }
 };
