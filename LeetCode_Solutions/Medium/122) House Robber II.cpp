@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    int rob(vector\<int>& nums) {
+        
+    }
+};
 svg
 
 svg
@@ -95,9 +100,3 @@ Copyright © 2026 LeetCode. All rights reserved.
 [**svg**](https://leetcode.com/problemset/)
 
 svg
-class Solution {
-public:
-    int rob(vector\<int>& nums) {
-        
-    }
-};
