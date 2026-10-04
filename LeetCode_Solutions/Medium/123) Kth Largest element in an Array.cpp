@@ -1,4 +1,9 @@
-LeetCode Logo
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k) {
+        
+    }
+};LeetCode Logo
 
  (image)
 
