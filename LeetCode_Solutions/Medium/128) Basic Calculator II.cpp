@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    int calculate(string s) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
