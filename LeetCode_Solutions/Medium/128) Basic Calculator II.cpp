@@ -1,12 +1,6 @@
 class Solution {
 public:
     int calculate(string s) {
-        
-    }
-};
-class Solution {
-public:
-    int calculate(string s) {
         long long num = 0;
         long long last = 0;
         long long result = 0;
