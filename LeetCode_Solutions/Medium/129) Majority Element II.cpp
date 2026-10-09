@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    vector<int> majorityElement(vector<int>& nums) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
