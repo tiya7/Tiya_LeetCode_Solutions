@@ -1,12 +1,6 @@
 class Solution {
 public:
     vector<int> majorityElement(vector<int>& nums) {
-        
-    }
-};
-class Solution {
-public:
-    vector<int> majorityElement(vector<int>& nums) {
         int candidate1 = 0, candidate2 = 1;
         int count1 = 0, count2 = 0;
 
