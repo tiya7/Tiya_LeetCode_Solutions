@@ -1,4 +1,9 @@
-
+class Solution {
+public:
+    int kthSmallest(TreeNode* root, int k) {
+        
+    }
+};
 
 Avatar
 TiyaGandhi
