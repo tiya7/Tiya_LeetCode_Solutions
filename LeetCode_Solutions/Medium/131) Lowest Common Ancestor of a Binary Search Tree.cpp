@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        
+    }
+}
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
