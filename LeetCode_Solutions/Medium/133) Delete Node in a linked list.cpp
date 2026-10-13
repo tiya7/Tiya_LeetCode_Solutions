@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    void deleteNode(ListNode* node) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
