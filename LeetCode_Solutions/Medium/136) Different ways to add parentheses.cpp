@@ -1,12 +1,6 @@
 class Solution {
 public:
     vector<int> diffWaysToCompute(string expression) {
-        
-    }
-};
-class Solution {
-public:
-    vector<int> diffWaysToCompute(string expression) {
         vector<int> ans;
 
         for (int i = 0; i < expression.size(); i++) {
