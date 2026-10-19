@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    int nthUglyNumber(int n) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
