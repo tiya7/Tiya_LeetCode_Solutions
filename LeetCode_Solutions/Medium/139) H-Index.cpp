@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    int hIndex(vector<int>& citations) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
