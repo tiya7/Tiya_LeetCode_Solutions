@@ -1,9 +1,3 @@
-class Solution {my
-public:
-    int findDuplicate(vector<int>& nums) {
-        
-    }
-};
 class Solution {
 public:
     int findDuplicate(vector<int>& nums) {
@@ -23,5 +17,5 @@ public:
         }
 
         return slow;
-    }
+    
 };
