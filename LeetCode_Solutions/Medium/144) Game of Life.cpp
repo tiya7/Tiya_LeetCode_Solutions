@@ -1,12 +1,6 @@
 class Solution {
 public:
     void gameOfLife(vector<vector<int>>& board) {
-        
-    }
-};
-class Solution {
-public:
-    void gameOfLife(vector<vector<int>>& board) {
         int m = board.size();
         int n = board[0].size();
 
