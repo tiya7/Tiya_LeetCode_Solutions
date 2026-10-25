@@ -5,6 +5,13 @@ public:
         
     }
 };
+class Solution {
+public:
+    string getHint(string secret, string guess) {
+        
+    }
+};
+
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
