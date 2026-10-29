@@ -1,4 +1,4 @@
-class NumArray {
+nahiclass NumArray {
     vector<int> nums;
     vector<int> tree;
     int n;
