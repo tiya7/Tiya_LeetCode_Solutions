@@ -1,12 +1,6 @@
 class Solution {
 public:
     int maxProfit(vector<int>& prices) {
-        
-    }
-};
-class Solution {
-public:
-    int maxProfit(vector<int>& prices) {
         int n = prices.size();
 
         vector<int> buy(n, 0);
