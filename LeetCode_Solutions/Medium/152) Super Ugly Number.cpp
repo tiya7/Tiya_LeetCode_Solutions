@@ -1,6 +1,11 @@
 
 
-Avatar
+Avatarclass Solution {
+public:
+    int nthSuperUglyNumber(int n, vector<int>& primes) {
+        
+    }
+};
 TiyaGandhi
 Access all features with our Premium subscription!
 myLists
