@@ -1,4 +1,9 @@
-
+class Solution {
+public:
+    int maxProduct(vector<string>& words) {
+        
+    }
+};
 class Solution {
 public:
     int maxProduct(vector<string>& words) {
