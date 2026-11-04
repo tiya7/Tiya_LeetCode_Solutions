@@ -7,6 +7,13 @@ public:
     }
 };
 
+class Solution {
+public:
+    int bulbSwitch(int n) {
+        return sqrt(n);
+    }
+};
+
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
