@@ -1,11 +1,5 @@
 class Solution {
 public:
-    int coinChange(vector<int>& coins, int amount) {
-        
-    }
-};
-class Solution {
-public:
     int maxProfit(vector<int>& prices) {
         int n = prices.size();
 
