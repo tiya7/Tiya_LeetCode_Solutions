@@ -1,19 +1,18 @@
 class Solution {
 public:
-    int maxProfit(vector<int>& prices) {
-        int n = prices.size();
+    int coinChange(vector<int>& coins, int amount) {
+        vector<int> dp(amount + 1, amount + 1);
 
-        vector<int> buy(n, 0);
-        vector<int> sell(n, 0);
+        dp[0] = 0;
 
-        buy[0] = -prices[0];
-
-        for (int i = 1; i < n; i++) {
-            buy[i] = max(buy[i - 1], (i >= 2 ? sell[i - 2] : 0) - prices[i]);
-
-            sell[i] = max(sell[i - 1], buy[i - 1] + prices[i]);
+        for (int i = 1; i <= amount; i++) {
+            for (int coin : coins) {
+                if (i >= coin) {
+                    dp[i] = min(dp[i], dp[i - coin] + 1);
+                }
+            }
         }
 
-        return sell[n - 1];
+        return dp[amount] > amount ? -1 : dp[amount];
     }
 };
