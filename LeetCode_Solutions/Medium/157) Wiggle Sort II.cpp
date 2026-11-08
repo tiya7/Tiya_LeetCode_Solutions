@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    void wiggleSort(vector<int>& nums) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
