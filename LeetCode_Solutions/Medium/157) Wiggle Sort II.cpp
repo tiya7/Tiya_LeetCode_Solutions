@@ -1,12 +1,6 @@
 class Solution {
 public:
     void wiggleSort(vector<int>& nums) {
-        
-    }
-};
-class Solution {
-public:
-    void wiggleSort(vector<int>& nums) {
         vector<int> a = nums;
         sort(a.begin(), a.end());
 
