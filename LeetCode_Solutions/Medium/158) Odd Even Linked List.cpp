@@ -1,12 +1,6 @@
 class Solution {
 public:
     ListNode* oddEvenList(ListNode* head) {
-        
-    }
-};
-class Solution {
-public:
-    ListNode* oddEvenList(ListNode* head) {
         if (head == NULL || head->next == NULL)
             return head;
 
