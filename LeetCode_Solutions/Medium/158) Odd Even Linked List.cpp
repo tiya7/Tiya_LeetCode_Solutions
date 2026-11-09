@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    ListNode* oddEvenList(ListNode* head) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
