@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    bool isValidSerialization(string preorder) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
