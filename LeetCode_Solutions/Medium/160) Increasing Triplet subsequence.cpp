@@ -1,12 +1,6 @@
 class Solution {
 public:
     bool increasingTriplet(vector<int>& nums) {
-        
-    }
-};
-class Solution {
-public:
-    bool increasingTriplet(vector<int>& nums) {
         int first = INT_MAX;
         int second = INT_MAX;
 
