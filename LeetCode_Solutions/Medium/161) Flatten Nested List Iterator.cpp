@@ -1,18 +1,4 @@
 class NestedIterator {
-public:
-    NestedIterator(vector<NestedInteger> &nestedList) {
-        
-    }
-    
-    int next() {
-        
-    }
-    
-    bool hasNext() {
-        
-    }
-};
-class NestedIterator {
     stack<NestedInteger> st;
 
 public:
