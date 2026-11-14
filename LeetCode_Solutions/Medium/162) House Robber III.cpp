@@ -1,11 +1,5 @@
 class Solution {
 public:
-    int rob(TreeNode* root) {
-        
-    }
-};
-class Solution {
-public:
     pair<int, int> solve(TreeNode* root) {
         if (root == NULL)
             return {0, 0};
