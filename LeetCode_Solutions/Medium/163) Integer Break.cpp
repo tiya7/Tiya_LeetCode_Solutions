@@ -1,12 +1,6 @@
 class Solution {
 public:
     int integerBreak(int n) {
-        
-    }
-};
-class Solution {
-public:
-    int integerBreak(int n) {
         vector<int> dp(n + 1, 0);
 
         dp[1] = 1;
