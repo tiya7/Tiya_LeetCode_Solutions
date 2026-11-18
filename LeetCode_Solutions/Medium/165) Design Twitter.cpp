@@ -1,5 +1,69 @@
 
+class Twitter {
+    int time;
+    unordered_map<int, vector<pair<int, int>>> tweets;
+    unordered_map<int, unordered_set<int>> following;
 
+public:
+    Twitter() {
+        time = 0;
+    }
+
+    void postTweet(int userId, int tweetId) {
+        tweets[userId].push_back({time++, tweetId});
+    }
+
+    vector<int> getNewsFeed(int userId) {
+        priority_queue<pair<int, int>> pq;
+
+        following[userId].insert(userId);
+
+        for (int user : following[userId]) {
+            if (!tweets[user].empty()) {
+                auto t = tweets[user].back();
+                pq.push(t);
+            }
+        }
+
+        vector<int> ans;
+
+        while (!pq.empty() && ans.size() < 10) {
+            auto t = pq.top();
+            pq.pop();
+
+            ans.push_back(t.second);
+
+            int user = -1;
+
+            for (int u : following[userId]) {
+                if (!tweets[u].empty() &&
+                    tweets[u].back().first == t.first) {
+                    user = u;
+                    break;
+                }
+            }
+
+            if (user != -1) {
+                tweets[user].pop_back();
+
+                if (!tweets[user].empty())
+                    pq.push(tweets[user].back());
+
+                tweets[user].push_back(t);
+            }
+        }
+
+        return ans;
+    }
+
+    void follow(int followerId, int followeeId) {
+        following[followerId].insert(followeeId);
+    }
+
+    void unfollow(int followerId, int followeeId) {
+        following[followerId].erase(followeeId);
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
