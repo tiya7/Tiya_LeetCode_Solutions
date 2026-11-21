@@ -1,12 +1,6 @@
 class Solution {
 public:
     bool canMeasureWater(int x, int y, int target) {
-        
-    }
-};
-class Solution {
-public:
-    bool canMeasureWater(int x, int y, int target) {
         if (target == 0)
             return true;
 
