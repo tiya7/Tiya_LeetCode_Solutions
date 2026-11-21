@@ -1,4 +1,9 @@
-
+class Solution {
+public:
+    bool canMeasureWater(int x, int y, int target) {
+        
+    }
+};
 
 Avatar
 TiyaGandhi
