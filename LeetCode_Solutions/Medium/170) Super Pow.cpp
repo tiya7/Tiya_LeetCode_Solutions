@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    int superPow(int a, vector<int>& b) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
