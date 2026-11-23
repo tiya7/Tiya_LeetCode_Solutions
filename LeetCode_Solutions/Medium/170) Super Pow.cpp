@@ -1,10 +1,5 @@
 class Solution {
 public:
-    int superPow(int a, vector<int>& b) {
-        
-    }
-};class Solution {
-public:
     int mod = 1337;
 
     int power(int a, int b) {
