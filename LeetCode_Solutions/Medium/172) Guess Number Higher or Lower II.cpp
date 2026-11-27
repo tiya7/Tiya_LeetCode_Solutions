@@ -1,12 +1,6 @@
 class Solution {
 public:
     int getMoneyAmount(int n) {
-        
-    }
-};
-class Solution {
-public:
-    int getMoneyAmount(int n) {
         vector<vector<int>> dp(n + 2, vector<int>(n + 2, 0));
 
         for (int len = 2; len <= n; len++) {
