@@ -1,5 +1,10 @@
 
-
+class Solution {
+public:
+    int getMoneyAmount(int n) {
+        
+    }
+};
 Avatar
 TiyaGandhi
 Access all features with our Premium subscription!
